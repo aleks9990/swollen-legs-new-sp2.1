@@ -18779,7 +18779,7 @@ html body #cc-id-FhxaAgJDONFm.nv-step3-clean .nv-step3-clean__media-frame img {
     if (!title) return;
     var copy = document.createElement('p');
     copy.className = 'nv-clinical-formulation-copy';
-    copy.textContent = 'Built to feed starving collagen, not just coat the surface. Six plant-based actives at clinical-strength concentrations, each selected for a single purpose: OPEN, REBUILD, PROTECT!';
+    copy.innerHTML = 'Built to feed starving collagen, not just coat the surface. Six plant-based actives at clinical-strength concentrations, each selected for a single purpose:<span class="nv-clinical-formulation-copy__purpose">OPEN, REBUILD, PROTECT!</span>';
     title.insertAdjacentElement('afterend', copy);
   }
 
@@ -19073,6 +19073,55 @@ html body #nv-hero .nv-stock-dot {
   50% {
     transform: scale(1.16);
     box-shadow: 0 0 0 6px rgba(19, 156, 74, 0);
+  }
+}
+</style>
+<style id="nv-two-formulas-sub-match">
+html body #nv-two-formulas .nv-two-formulas__sub {
+  display: none !important;
+}
+
+html body #nv-two-formulas .nv-two-formulas__title {
+  font-family: Poppins, sans-serif !important;
+  font-size: var(--nv-section-heading-size-desktop, 30px) !important;
+  font-weight: var(--nv-section-heading-weight, 800) !important;
+  line-height: var(--nv-section-heading-line-height, 1.18) !important;
+  color: #17222e !important;
+  text-align: center !important;
+  margin: 0 0 8px !important;
+  letter-spacing: 0 !important;
+}
+
+html body #nv-two-formulas .nv-clinical-formulation-copy {
+  display: block !important;
+  font-family: Poppins, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #555 !important;
+  text-align: center !important;
+  max-width: 680px !important;
+  margin: 10px auto 34px !important;
+  padding: 0 !important;
+}
+
+html body #nv-two-formulas .nv-clinical-formulation-copy__purpose {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  html body #nv-two-formulas .nv-two-formulas__title {
+    font-size: var(--nv-section-heading-size-mobile, 24px) !important;
+    line-height: var(--nv-section-heading-line-height, 1.18) !important;
+    padding: 0 18px !important;
+    margin: 0 auto 8px !important;
+  }
+
+  html body #nv-two-formulas .nv-clinical-formulation-copy {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+    margin: 8px auto 18px !important;
+    padding: 0 22px !important;
   }
 }
 </style>
