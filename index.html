@@ -14454,8 +14454,8 @@ body.dom-pending * {
 </style>
 <style id="nv-hero-critical-no-fouc">
 html body #nv-hero {
-  background: radial-gradient(circle at 24% 24%, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0) 36%), linear-gradient(105deg, #eaf2fb 0%, #eef5fb 30%, #f4f8fb 58%, #fafcfe 82%, #ffffff 100%) !important;
-  background-color: #eaf2fb !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
   border-bottom: 1px solid #e8e4df !important;
 }
 html body #nv-hero .nv-amla-benefits,
@@ -14465,21 +14465,21 @@ html body #nv-hero .nv-checkout-strip {
 }
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card:not(.is-selected),
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card:not(.is-selected):before {
-  background: #f7fbff !important;
-  background-color: #f7fbff !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
   border-color: #b9cadb !important;
 }
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected,
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-selected {
-  background: #ffffff !important;
-  background-color: #ffffff !important;
-  border-color: #052f55 !important;
-  box-shadow: 0 0 0 1px #052f55 !important;
+  background: #eef8ff !important;
+  background-color: #eef8ff !important;
+  border-color: #0b8ed0 !important;
+  box-shadow: inset 0 0 0 2px #0b8ed0, 0 8px 20px rgba(7,59,99,.12) !important;
 }
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected:before,
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-selected:before {
-  background: #ffffff !important;
-  background-color: #ffffff !important;
+  background: #eef8ff !important;
+  background-color: #eef8ff !important;
 }
 .nv-urgency-timer {
   background: transparent !important;
@@ -14935,7 +14935,7 @@ html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-sel
         newHero.id = 'nv-hero';
         newHero.innerHTML = `
         <style>
-          #nv-hero { background:radial-gradient(circle at 24% 24%, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0) 36%), linear-gradient(105deg, #eaf2fb 0%, #eef5fb 30%, #f4f8fb 58%, #fafcfe 82%, #ffffff 100%); background-color:#eaf2fb; padding:30px 0 0; }
+          #nv-hero { background:#ffffff; background-color:#ffffff; padding:30px 0 0; }
           .nv-hero-grid {
             max-width:1100px; margin:0 auto; padding:0 24px;
             display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;
@@ -16173,11 +16173,11 @@ html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-sel
     style.textContent = [
       '#nv-hero .nv-pack-card{will-change:transform,border-color,box-shadow,background;}',
       '#nv-hero .nv-pack-card[role="button"]{outline:none;}',
-      '#nv-hero .nv-pack-card:not(.is-selected){background:#f7fbff!important;border-color:#b9cadb!important;box-shadow:none!important;transform:none!important;color:#17222e!important;}',
-      '#nv-hero .nv-pack-card.is-selected{background:#fff!important;border-color:#052f55!important;box-shadow:0 0 0 1px #052f55!important;transform:none!important;color:#17222e!important;}',
+      '#nv-hero .nv-pack-card:not(.is-selected){background:#fff!important;border-color:#b9cadb!important;box-shadow:none!important;transform:none!important;color:#17222e!important;}',
+      '#nv-hero .nv-pack-card.is-selected{background:#eef8ff!important;border-color:#0b8ed0!important;box-shadow:inset 0 0 0 2px #0b8ed0,0 8px 20px rgba(7,59,99,.12)!important;transform:none!important;color:#17222e!important;}',
       '#nv-hero .nv-pack-card.is-selected:after{display:none!important;}',
       '#nv-hero .nv-pack-card:focus-visible{box-shadow:0 0 0 3px rgba(5,47,85,.18)!important;}',
-      '#nv-hero .nv-pack-card.is-selected:focus-visible{box-shadow:0 0 0 2px #052f55,0 0 0 5px rgba(5,47,85,.16)!important;}',
+      '#nv-hero .nv-pack-card.is-selected:focus-visible{box-shadow:inset 0 0 0 2px #0b8ed0,0 0 0 5px rgba(11,142,208,.16),0 8px 20px rgba(7,59,99,.12)!important;}',
       '#nv-hero .nv-pack-card.is-selected .nv-pack-price{color:#052f55!important;}',
       '@media(max-width:768px){html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected,html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-selected{border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;}html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected:before{border:2px solid #052f55!important;background:#f8fcff!important;}html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected:focus-visible{box-shadow:none!important;outline:0!important;}}',
       '#nv-hero .nv-pack-card.is-selected .nv-pack-soft-badge{background:#edf5f8!important;color:#17222e!important;}','#nv-hero .nv-afterpay-list{margin:16px 0 0!important;padding:0!important;color:#17222e!important;font-weight:500!important;}','#nv-hero .nv-afterpay-list li{margin:7px 0!important;padding-left:22px!important;color:#17222e!important;}','#nv-hero .nv-afterpay-list li:before{color:#052f55!important;font-weight:800!important;}'
@@ -19145,9 +19145,9 @@ html body .nv-faq .nv-faq__answer-text p:last-child {
 </style>
 <style id="nv-final-offer-hero-bg-final">
 html body #cc-id-21Q1T7Kw6r9y {
-  background: radial-gradient(circle at 24% 24%, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0) 36%), linear-gradient(105deg, #eaf2fb 0%, #eef5fb 30%, #f4f8fb 58%, #fafcfe 82%, #ffffff 100%) !important;
-  background-color: #eaf2fb !important;
-  box-shadow: 0 0 0 100vmax #eaf2fb !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 0 0 100vmax #ffffff !important;
   clip-path: inset(0 -100vmax);
 }
 
@@ -19184,9 +19184,9 @@ html body #cc-id-21Q1T7Kw6r9y #cc-id-Py2W9v0DCaIr {
 <style id="nv-final-offer-mobile-bg-unify-final">
 @media (max-width: 768px) {
   html body #cc-id-21Q1T7Kw6r9y {
-    background: #f8fbff !important;
-    background-color: #f8fbff !important;
-    box-shadow: 0 0 0 100vmax #f8fbff !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 100vmax #ffffff !important;
     clip-path: inset(0 -100vmax) !important;
   }
 
@@ -19252,12 +19252,14 @@ html body #cc-id-N09WEWIQxb66 #cc-id-Xf4dQNxpUfFF {
 
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected:before,
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-selected:before {
-  border: 1px solid #d6dfe8 !important;
+  border: 1px solid #0b8ed0 !important;
 }
 
 html body #nv-hero .nv-pack-card.is-selected {
-  border-color: #d6dfe8 !important;
-  box-shadow: none !important;
+  background: #eef8ff !important;
+  background-color: #eef8ff !important;
+  border-color: #0b8ed0 !important;
+  box-shadow: inset 0 0 0 2px #0b8ed0, 0 8px 20px rgba(7,59,99,.12) !important;
 }
 </style>
 <style id="nv-hero-gift-card-clean-border-final">
@@ -19309,6 +19311,8 @@ html body #nv-hero .nv-pack-card.is-selected,
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected:before,
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-selected:before {
   border-color: #0b8ed0 !important;
+  background: #eef8ff !important;
+  background-color: #eef8ff !important;
 }
 
 html body #nv-hero .nv-gift-card {
@@ -19352,8 +19356,8 @@ html body #nv-hero .nv-gift-ebook .nv-gift-card {
 </style>
 <style id="nv-hero-white-bg-final">
 html body #nv-hero {
-  background: radial-gradient(circle at 24% 24%, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0) 36%), linear-gradient(105deg, #eaf2fb 0%, #eef5fb 30%, #f4f8fb 58%, #fafcfe 82%, #ffffff 100%) !important;
-  background-color: #eaf2fb !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
   border-bottom: 1px solid #e8e4df !important;
 }
 </style>
@@ -19410,22 +19414,22 @@ html body #cc-id-LMd9BYM1pXJK #cc-id-Z0VqSOzy2fk6 {
 <style id="nv-hero-blue-panels-final">
 html body #nv-hero .nv-amla-benefits,
 html body #nv-hero .nv-checkout-strip {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: #f1f8ff !important;
+  background-color: #f1f8ff !important;
 }
 </style>
 <style id="nv-hero-pack-card-blend-final">
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card:not(.is-selected),
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card:not(.is-selected):before {
-  background: #f7fbff !important;
-  background-color: #f7fbff !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
   border-color: #b9cadb !important;
 }
 
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.is-selected:before,
 html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-selected:before {
-  background: #ffffff !important;
-  background-color: #ffffff !important;
+  background: #eef8ff !important;
+  background-color: #eef8ff !important;
 }
 </style>
 <style id="nv-discount-countdown-final">
@@ -19487,7 +19491,7 @@ html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-sel
   border-radius: 999px;
   background: var(--nv-urgency-red);
   transform-origin: 50% 100%;
-  animation: nv-urgency-hand-spin 1.15s linear infinite;
+  animation: nv-urgency-hand-spin 3s linear infinite;
 }
 
 .nv-countdown-time {
