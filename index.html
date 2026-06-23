@@ -19420,8 +19420,8 @@ html body #cc-id-LMd9BYM1pXJK #cc-id-Z0VqSOzy2fk6 {
 <style id="nv-hero-blue-panels-final">
 html body #nv-hero .nv-amla-benefits,
 html body #nv-hero .nv-checkout-strip {
-  background: #f1f8ff !important;
-  background-color: #f1f8ff !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
 }
 </style>
 <style id="nv-hero-pack-card-blend-final">
@@ -19561,10 +19561,10 @@ html body #nv-hero .nv-pack-grid-reference .nv-pack-card.nv-pack-featured.is-sel
 
   function render() {
     var elapsed = Math.floor((Date.now() - startedAt) / 1000);
-    var remaining = duration - (elapsed % duration);
+    var remaining = Math.max(duration - elapsed, 0);
     var minutes = Math.floor(remaining / 60);
     var seconds = remaining % 60;
-    var label = pad(minutes) + ':' + pad(seconds);
+    var label = remaining === 0 ? 'EXPIRED' : pad(minutes) + ':' + pad(seconds);
 
     document.querySelectorAll('.nv-countdown-time').forEach(function (node) {
       node.textContent = label;
